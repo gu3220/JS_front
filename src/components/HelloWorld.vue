@@ -1,33 +1,28 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
+
+<form> 
+  <div class="cards">
+
+  <div class="first-card">
+    <br />
+    <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZDZ2lTXq_hKowK_nXmT3usuqeId0dJueFsg&usqp=CAU" /> 
+    <p> ФИО: Гурина К.В.<br />
+      Группа: БСБО-05-19<br />
+      Умения: Ничего особенного:(<br />
     </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
   </div>
+  <div class="second-card"><br />
+    <input type="text" id="name" required placeholder="Ваше имя:"/> <br />
+    <br />
+    <input type="text" id="mail" required placeholder="Почта:"/> <br />
+    <br />
+    <textarea id="message" required placeholder="Сопроводительное письмо:"/> <br />
+    <br />
+    <button id="sub" type="submit">Отправить</button>
+  </div>
+  </div>
+</form>
+     
 </template>
 
 <script>
@@ -41,18 +36,62 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+.cards {
+  display: flex;
+  padding-top: 25px ;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+.first-card  {
+  margin-left: 250px;
+  width: 400px;
+  height: 300px;
+  box-shadow: 8px 8px 8px lightblue;
+  border:solid lightblue;
+  border-radius: 5%;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+.second-card {
+  margin-left: 100px;
+  width: 400px;
+  height: 300px;
+  box-shadow: 8px 8px 8px lightblue;
+  border:solid lightblue;
+  border-radius: 5%;
 }
-a {
-  color: #42b983;
+p {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  line-height: 1.5;
 }
+#name {
+  width: 80%;
+  height: 10%;
+  border: solid 2px lightblue;
+  border-radius: 5px;
+}
+#mail {
+  width: 80%;
+  height: 10%;
+  border: solid 2px lightblue;
+  border-radius: 5px;
+}
+#message {
+  width: 80%;
+  height: 30%;
+  border: solid 2px lightblue;
+  border-radius: 5px;
+  font-family: unset;
+} 
+
+#sub {
+  width: 80%;
+  height: 10%;
+  border: solid 2px lightblue;
+  border-radius: 5px;
+}
+img {
+  height: 120px;
+  border-radius: 5px;
+}
+
 </style>
