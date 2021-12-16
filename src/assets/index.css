@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+}
+#app {
+    font-family: Helvetica;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: blueviolet;
+    padding: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    background-color: rgb(182, 199, 201);
+    display: block;
+}
+.info-card {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+.main-layout  {
+    border: 5px solid rgb(65, 102, 107);
+    border-radius: 10px;
+    padding: 50px;
+    background-color: rgb(230, 230, 230);
+}
+
+.form-field {
+    margin: 10px 3px 30px 5px;
+    justify-content: stretch;
+}
+
+input#login {
+    border: 1px solid blue;
+    margin: 5px ;
+    border-radius: 3px;
+    padding: 3px;
+    width:200px;
+    height: 30px;
+}
+input#password {
+    border: 1px solid blue;
+    margin: 5px ;
+    border-radius: 3px;
+    padding: 3px;
+    width:200px;
+    height: 30px;
+}
+input#email {
+    border: 1px solid blue;
+    margin: 5px ;
+    border-radius: 3px;
+    padding: 3px;
+    width:200px;
+    height: 30px;
+}
+.submit-btn {
+    background-color: rgb(197, 220, 223);
+    padding: 6px;
+    border-radius: 3px;
+    margin: 5px;
+    width:200px;
+    height: 30px;
+}
+.action-link {
+    margin: 5px;
+}
+.link-btn {
+    color: rgb(65, 102, 107);
+    padding: 6px;
+    border-radius: 3px;
+    margin: 5px;
+}
+
+.auth-layout {
+    border: 5px solid rgb(65, 102, 107);
+    border-radius: 10px;
+    padding: 50px;
+    background-color: rgb(230, 230, 230);
+}
+#nav {
+    position: fixed;
+    border-bottom: 5px solid rgb(94, 65, 107);
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(156, 155, 180);
+    justify-content: center;
+    box-shadow: 10px, black;
+    z-index: auto;
+    margin: auto;
+}
+.link-wrapper {
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 5px;
+}
+.nav-links {
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.nav-link {
+    justify-content: space-between;
+    margin: 0 50px 0 50px;
+    display: flex;
+}
+.nav-link:focus {
+    color: rgb(155, 14, 108);
+}
+.nav-link:hover {
+    color: rgb(47, 47, 145);
+}
+.create-btn {
+    background-color: rgb(197, 220, 223);
+    padding: 6px;
+    border-radius: 3px;
+    margin: 5px;
+    width:70px;
+    height: 30px;
+}
+.name-todo {
+    border: 1px solid blue;
+    margin: 5px ;
+    border-radius: 3px;
+    padding: 3px;
+    width:200px;
+    height: 30px;
+}
+.todo-item {
+    width:200px;
+    height: 50px;
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+}
+.delete-btn {
+    background-color: rgb(201, 97, 123);
+}
+.title {
+    background-color: white;
+    border: 1px solid blue;
+    margin: 5px ;
+    border-radius: 3px;
+    padding: 3px;
+    width: 250px;
+    height: 30px;
+}
+.checkbox {
+    width: 15px;
+    height: 15px;
+}
+.actions {
+    display: flex;
+    flex-direction: row;
+}
+.cards {
+    display: flex;
+    padding-top: 25px ;
+  }
+.first-card  {
+    margin: 10px;
+    width: 400px;
+    height: 400px;
+    box-shadow: 8px 8px 8px rgb(65, 102, 107);
+    border:solid rgb(65, 102, 107);
+    border-radius: 5%;
+    background-color: rgb(182, 199, 201);
+  }
+.second-card {
+    margin: 10px;
+    width: 400px;
+    height: 400px;
+    box-shadow: 8px 8px 8px rgb(65, 102, 107);
+    border:solid rgb(65, 102, 107);
+    border-radius: 5%;
+    background-color: rgb(182, 199, 201);
+  }
+input#mail {
+    border: 1px solid blue;
+    margin: 5px ;
+    border-radius: 3px;
+    padding: 3px;
+    width:200px;
+    height: 30px;
+}
+textarea#message {
+    border: 1px solid blue;
+    margin: 5px ;
+    border-radius: 3px;
+    padding: 3px;
+    width:200px;
+    height: 100px;
+}
+input#name {
+    border: 1px solid blue;
+    margin: 5px ;
+    border-radius: 3px;
+    padding: 3px;
+    width:200px;
+    height: 30px;
+}
+button#sub {
+    background-color: rgb(197, 220, 223);
+    padding: 6px;
+    border-radius: 3px;
+    margin: 5px;
+    width:200px;
+    height: 30px;
+}
+img {
+    box-shadow: 8px 8px 8px rgb(65, 102, 107);
+}
